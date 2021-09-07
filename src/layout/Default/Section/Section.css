@@ -1,0 +1,16 @@
+#SectionContainer{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+}
+
+#SectionWrapper{
+    height: 100%;
+    width: 1300px;
+}
