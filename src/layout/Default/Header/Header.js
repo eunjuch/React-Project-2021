@@ -9,7 +9,7 @@ const Header = () => {
         <div className="Header">
             <Link to={"/"}>
                 <div className="headerLogo">
-                    Header
+                    CECOM
                 </div>
             </Link>
             <div className="headerNav">
