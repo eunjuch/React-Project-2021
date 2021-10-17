@@ -7,12 +7,15 @@ const Header = () => {
     
     return (
         <div className="Header">
-            Header
-
-            <Link to={"/board"}>Board</Link>
-            <Link to={"/introduction"}>Introduction</Link>
-            <Link to={"/member"}>Member</Link>
-            <Link to={"/project"}>Project</Link>
+            <div className="headerLogo">
+                Header
+            </div>
+            <div className="headerNav">
+                <Link to={"/board"}>Board</Link>
+                <Link to={"/introduction"}>Introduction</Link>
+                <Link to={"/member"}>Member</Link>
+                <Link to={"/project"}>Project</Link>
+            </div>
         </div>
     );
 }
