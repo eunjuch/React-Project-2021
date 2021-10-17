@@ -13,10 +13,26 @@ const Header = () => {
                 </div>
             </Link>
             <div className="headerNav">
-                <Link to={"/board"}>Board</Link>
-                <Link to={"/introduction"}>Introduction</Link>
-                <Link to={"/member"}>Member</Link>
-                <Link to={"/project"}>Project</Link>
+                <Link to={"/board"}>
+                    <div className="headerNavItem">
+                        Board
+                    </div>
+                </Link>
+                <Link to={"/introduction"}>
+                    <div className="headerNavItem">
+                        Introduction
+                    </div>
+                </Link>
+                <Link to={"/member"}>
+                    <div className="headerNavItem">
+                        Member
+                    </div>
+                </Link>
+                <Link to={"/project"}>
+                    <div className="headerNavItem">
+                        Project
+                    </div>
+                </Link>
             </div>
         </div>
     );
