@@ -36,15 +36,17 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-
-.headerNavItemDeco{
-    height: 10px;
-    width: 100%;
 
     background-color: #FFFFFF;
 }
 
-.headerNavItemDeco:hover{
+.headerNavItem:hover{
     background-color: #003c8f;
+}
+
+.headerNavItemTitle{
+    height: 60px;
+    width: 100%;
+
+    background-color: #FFFFFF;
 }

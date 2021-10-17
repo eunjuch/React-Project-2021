@@ -15,26 +15,30 @@ const Header = () => {
             <div className="headerNav">
                 <Link to={"/board"}>
                     <div className="headerNavItem">
-                        <p>Board</p>
-                        <div className="headerNavItemDeco"/>
+                        <div className="headerNavItemTitle">
+                            <p>Board</p>
+                        </div>
                     </div>
                 </Link>
                 <Link to={"/introduction"}>
                     <div className="headerNavItem">
-                        <p>Introduction</p>
-                        <div className="headerNavItemDeco"/>
+                        <div className="headerNavItemTitle">
+                            <p>Introduction</p>
+                        </div>
                     </div>
                 </Link>
                 <Link to={"/member"}>
                     <div className="headerNavItem">
-                        <p>Member</p>
-                        <div className="headerNavItemDeco"/>
+                        <div className="headerNavItemTitle">
+                            <p>Member</p>
+                        </div>
                     </div>
                 </Link>
                 <Link to={"/project"}>
                     <div className="headerNavItem">
-                        <p>Project</p>
-                        <div className="headerNavItemDeco"/>
+                        <div className="headerNavItemTitle">
+                            <p>Project</p>
+                        </div>
                     </div>
                 </Link>
             </div>
