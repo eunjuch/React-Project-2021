@@ -17,7 +17,7 @@
 .headerLogo{
     height: 75px;
     width: 75px;
-    
+
     align-items: center;
 }
 
@@ -27,4 +27,12 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+}
+
+.headerNavItem{
+    height: 100%;
+    width: 220px;
+
+    display: flex;
+    flex-direction: column;
 }
