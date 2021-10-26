@@ -36,6 +36,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     background-color: #FFFFFF;
     transition: background-color 0.3s ease-in-out;
@@ -52,6 +53,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     background-color: #FFFFFF;
 }
