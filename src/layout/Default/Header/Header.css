@@ -52,7 +52,7 @@
 }
 
 .headerTitle{
-    height: 75px;
+    height: 60px;
 
     align-items: center;
     display: flex;
@@ -60,24 +60,29 @@
 }
 
 .headerTitleLogo{
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
 
     align-items: center;
 }
 
 .headerTitleLogo img{
-    height: 75px;
+    height: 60px;
 
     border-radius: 37.5px;
 }
 
 .headerTitleTitle{
-    height: 75px;
+    height: 60px;
+
+    margin-left: 15px;
 
     align-items: center;
 }
 
 .headerTitleLogo p{
-    height: 75px;
+    height: 60px;
+
+    font-family: 'Righteous', cursive;
+    font-size: 55px;
 }
