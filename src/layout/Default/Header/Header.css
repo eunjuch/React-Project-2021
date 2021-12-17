@@ -72,7 +72,7 @@
     border-radius: 37.5px;
 }
 
-.headerTitleTitle{
+.headerTitleText{
     height: 60px;
 
     margin-left: 15px;
@@ -80,7 +80,7 @@
     align-items: center;
 }
 
-.headerTitleLogo p{
+.headerTitleText p{
     height: 60px;
 
     font-family: 'Righteous', cursive;
