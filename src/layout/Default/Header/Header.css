@@ -83,6 +83,8 @@
 .headerTitleText p{
     height: 60px;
 
+    margin: 0;
+
     color: #F5D040;
     font-family: 'Righteous', cursive;
     font-size: 55px;
