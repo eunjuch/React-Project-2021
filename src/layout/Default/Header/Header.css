@@ -51,6 +51,14 @@
     background-color: #0A154E;
 }
 
+.headerNavItemTitle p{
+    margin: 0;
+
+    color: #F5D040;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 25px;
+}
+
 .headerTitle{
     height: 60px;
 
