@@ -80,17 +80,10 @@
     align-items: center;
 }
 
-.headerTitleText a{
-    text-decoration: none;
-}
-
-.headerTitleText a:visited{
-    text-decoration-line: none;
-}
-
 .headerTitleText p{
     height: 60px;
 
+    color: #F5D040;
     font-family: 'Righteous', cursive;
     font-size: 55px;
 }
