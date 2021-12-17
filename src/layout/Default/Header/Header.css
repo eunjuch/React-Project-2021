@@ -80,6 +80,10 @@
     align-items: center;
 }
 
+.headerTitleText a{
+    text-decoration: none;
+}
+
 .headerTitleText p{
     height: 60px;
 
