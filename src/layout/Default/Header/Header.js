@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
+import CecomLogo from "../../images/cecom_logo.png";
+
 import "./Header.css"
 
 const Header = () => {
@@ -9,7 +11,7 @@ const Header = () => {
         <div className="Header">
             <Link to={"/"}>
                 <div className="headerLogo">
-                    CECOM
+                    <img src={CecomLogo}/>
                 </div>
             </Link>
             <div className="headerNav">
