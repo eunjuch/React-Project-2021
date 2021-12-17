@@ -10,11 +10,13 @@ const Header = () => {
     return (
         <div className="Header">
             <Link to={"/"}>
-                <div className="headerTitleLogo">
-                    <img src={CecomLogo}/>
-                </div>
-                <div className="headerTitleText">
-                    <p>CECOM</p>
+                <div className="headerTitle">
+                    <div className="headerTitleLogo">
+                        <img src={CecomLogo}/>
+                    </div>
+                    <div className="headerTitleText">
+                        <p>CECOM</p>
+                    </div>
                 </div>
             </Link>
             <div className="headerNav">

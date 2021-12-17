@@ -51,6 +51,14 @@
     background-color: #0A154E;
 }
 
+.headerTitle{
+    height: 75px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
 .headerTitleLogo{
     height: 75px;
     width: 75px;
