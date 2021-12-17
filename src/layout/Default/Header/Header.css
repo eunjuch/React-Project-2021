@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    background-color: #FFFFFF;
+    background-color: #0A154E;
     position: fixed;
     top: 0;
 }
@@ -44,12 +44,12 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #FFFFFF;
+    background-color: #0A154E;
     transition: background-color 0.3s ease-in-out;
 }
 
 .headerNavItem:hover{
-    background-color: #003c8f;
+    background-color: #F5D040;
 }
 
 .headerNavItemTitle{
@@ -61,5 +61,5 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: #FFFFFF;
+    background-color: #0A154E;
 }
