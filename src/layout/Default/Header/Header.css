@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
 
+    background-color: #5298ff;
     position: fixed;
     top: 0;
 }
