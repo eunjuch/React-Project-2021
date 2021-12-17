@@ -23,28 +23,28 @@ const Header = () => {
                 <Link to={"/board"}>
                     <div className="headerNavItem">
                         <div className="headerNavItemTitle">
-                            <p>Board</p>
+                            <p>게시판</p>
                         </div>
                     </div>
                 </Link>
                 <Link to={"/introduction"}>
                     <div className="headerNavItem">
                         <div className="headerNavItemTitle">
-                            <p>Introduction</p>
+                            <p>소개</p>
                         </div>
                     </div>
                 </Link>
                 <Link to={"/member"}>
                     <div className="headerNavItem">
                         <div className="headerNavItemTitle">
-                            <p>Member</p>
+                            <p>멤버</p>
                         </div>
                     </div>
                 </Link>
                 <Link to={"/project"}>
                     <div className="headerNavItem">
                         <div className="headerNavItemTitle">
-                            <p>Project</p>
+                            <p>프로젝트</p>
                         </div>
                     </div>
                 </Link>
