@@ -67,19 +67,6 @@
     flex-direction: row;
 }
 
-.headerTitleLogo{
-    height: 60px;
-    width: 60px;
-
-    align-items: center;
-}
-
-.headerTitleLogo img{
-    height: 60px;
-
-    border-radius: 37.5px;
-}
-
 .headerTitleText{
     height: 60px;
 

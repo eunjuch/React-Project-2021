@@ -11,9 +11,6 @@ const Header = () => {
         <div className="Header">
             <Link to={"/"}>
                 <div className="headerTitle">
-                    <div className="headerTitleLogo">
-                        <img src={CecomLogo}/>
-                    </div>
                     <div className="headerTitleText">
                         <p>CECOM</p>
                     </div>
