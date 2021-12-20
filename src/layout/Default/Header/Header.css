@@ -15,6 +15,10 @@
     top: 0;
 }
 
+.Header a{
+    text-decoration: none;
+}
+
 .headerNav{
     height: 90px;
 
