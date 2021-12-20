@@ -27,10 +27,6 @@
     flex-direction: row;
 }
 
-.headerNav a{
-    text-decoration: none;
-}
-
 .headerNavItem{
     height: 90px;
     width: 220px;
