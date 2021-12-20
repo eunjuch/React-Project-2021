@@ -1,8 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-import CecomLogo from "../../../image/cecom_logo.png";
-
 import "./Header.css"
 
 const Header = () => {
