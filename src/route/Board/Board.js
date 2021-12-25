@@ -8,11 +8,11 @@ const Board = () => {
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPost"
         ).then(
-            resultOK = (response) => {
+            function resultOK(response) {
                 console.log(response);
             }
         ).catch(
-            resultError = (error) => {
+            function resultError (error) {
                 console.log(error);
             }
         );
