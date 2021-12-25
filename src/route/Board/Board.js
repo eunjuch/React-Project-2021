@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Board.css";
 
 const Board = () => {
-    let postList = {
+    const [postList, setPostList] = useState({
         "RESULT": {
             "RESULT_CODE": 100,
             "RESULT_MSG": "NOT LOADED"
@@ -16,20 +16,20 @@ const Board = () => {
                 "content": "",
                 "title": ""
             }
-        }}
+        }});
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
-                postList = response.data;
+                setPostList(response.data);
             }
         ).catch(
             function resultError (error) {
                 console.log(error);
             }
         );
-    }, [postList]);
+    }, []);
 
     return(
         <div id="divBoard">
