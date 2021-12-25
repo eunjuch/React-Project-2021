@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Board.css";
 
 const Board = () => {
-    let postList = {"postID": ""}
+    let postList = {"DATA": ""}
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
