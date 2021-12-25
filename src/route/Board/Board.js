@@ -34,13 +34,7 @@ const Board = () => {
     return(
         <div id="divBoard">
             {
-                // postList.DATA.map(item => {
-                //     return(
-                //         <div>
-                //             {item.title}
-                //         </div>
-                //     );
-                // })
+                postList.Result.RESULT_CODE
             }
         </div>
     )
