@@ -6,7 +6,10 @@ import "./Board.css";
 
 const Board = () => {
     let postList = {
-        "RESULT": 100,
+        "RESULT": {
+            "RESULT_CODE": 100,
+            "RESULT_MSG": "NOT LOADED"
+        },
         "DATA": {
             "000000-000000": {
                 "author": "",
@@ -14,17 +17,12 @@ const Board = () => {
                 "title": ""
             }
         }}
-    
-    console.log("Before Load");
-    console.log(postList);
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
                 postList = response.data;
-                console.log("After Load");
-                console.log(postList);
             }
         ).catch(
             function resultError (error) {
@@ -36,13 +34,7 @@ const Board = () => {
     return(
         <div id="divBoard">
             {
-                // postList.DATA.map(item => {
-                //     return(
-                //         <div>
-                //             {item.title}
-                //         </div>
-                //     );
-                // })
+                postList.Result.RESULT_CODE
             }
         </div>
     )
