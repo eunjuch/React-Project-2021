@@ -9,7 +9,7 @@ const Board = () => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
-                console.log(response);
+                console.log(response.data);
             }
         ).catch(
             function resultError (error) {
