@@ -6,7 +6,10 @@ import "./Board.css";
 
 const Board = () => {
     let postList = {
-        "RESULT": 100,
+        "RESULT": {
+            "RESULT_CODE": 100,
+            "RESULT_MSG": "NOT LOADED"
+        },
         "DATA": {
             "000000-000000": {
                 "author": "",
