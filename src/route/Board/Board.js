@@ -5,13 +5,13 @@ import axios from "axios";
 import "./Board.css";
 
 const Board = () => {
-    const [postList, setPostList] = useState({"": ""});
+    let postList = {"postID": ""}
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
-                setPostList(response.data.DATA);
+                postList = response.data.DATA;
             }
         ).catch(
             function resultError (error) {
@@ -24,13 +24,11 @@ const Board = () => {
         <div id="divBoard">
             {
                 postList.map(item => {
-                    if(item.pinned){
-                        return(
-                            <div>
-                                {item.title}
-                            </div>
-                        );
-                    }
+                    return(
+                        <div>
+                            {item.title}
+                        </div>
+                    );
                 })
             }
         </div>
