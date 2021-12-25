@@ -5,7 +5,15 @@ import axios from "axios";
 import "./Board.css";
 
 const Board = () => {
-    let postList = {"postID": ""}
+    let postList = {
+        "RESULT": 100,
+        "DATA": {
+            "000000-000000": {
+                "author": "",
+                "content": "",
+                "title": ""
+            }
+        }}
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
