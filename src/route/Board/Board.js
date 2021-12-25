@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Board.css";
 
 const Board = () => {
-    const [postList, setPostList] = useState({"": ""});
+    const [postList, setPostList] = useState({"postID": ""});
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
@@ -24,13 +24,11 @@ const Board = () => {
         <div id="divBoard">
             {
                 postList.map(item => {
-                    if(item.pinned){
-                        return(
-                            <div>
-                                {item.title}
-                            </div>
-                        );
-                    }
+                    return(
+                        <div>
+                            {item.title}
+                        </div>
+                    );
                 })
             }
         </div>
