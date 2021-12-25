@@ -11,20 +11,19 @@ const Board = () => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
-                console.log(response.data.DATA);
-                setPostList(response.data);
+                setPostList(response.data.DATA);
             }
         ).catch(
             function resultError (error) {
                 console.log(error);
             }
         );
-    }, []);
+    }, [postList]);
 
     return(
         <div id="divBoard">
             {
-                postList.DATA.map(item => {
+                postList.map(item => {
                     if(item.pinned){
                         return(
                             <div>
