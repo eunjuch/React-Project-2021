@@ -34,7 +34,7 @@ const Board = () => {
     return(
         <div id="divBoard">
             {
-                postList.Result.RESULT_CODE
+                postList.RESULT.RESULT_CODE
             }
         </div>
     )
