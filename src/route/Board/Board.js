@@ -11,7 +11,7 @@ const Board = () => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
-                postList = response.data.DATA;
+                postList = response.data;
             }
         ).catch(
             function resultError (error) {
@@ -23,7 +23,7 @@ const Board = () => {
     return(
         <div id="divBoard">
             {
-                postList.map(item => {
+                postList.DATA.map(item => {
                     return(
                         <div>
                             {item.title}
