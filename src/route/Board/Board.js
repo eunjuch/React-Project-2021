@@ -17,17 +17,12 @@ const Board = () => {
                 "title": ""
             }
         }}
-    
-    console.log("Before Load");
-    console.log(postList);
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
                 postList = response.data;
-                console.log("After Load");
-                console.log(postList);
             }
         ).catch(
             function resultError (error) {
