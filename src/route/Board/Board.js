@@ -5,7 +5,7 @@ import axios from "axios";
 import "./Board.css";
 
 const Board = () => {
-    const [postList, setPostList] = useState();
+    const [postList, setPostList] = useState({"": ""});
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
@@ -22,7 +22,6 @@ const Board = () => {
 
     return(
         <div id="divBoard">
-            {console.log(postList)}
             {
                 postList.map(item => {
                     if(item.pinned){
