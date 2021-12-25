@@ -6,7 +6,7 @@ import "./Board.css";
 
 const Board = () => {
     useEffect(() => {
-        axios.post("https://api.cecom.dev/getPost"
+        axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
                 console.log(response);
