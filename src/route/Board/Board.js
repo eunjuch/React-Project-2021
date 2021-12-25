@@ -22,9 +22,8 @@ const Board = () => {
 
     return(
         <div id="divBoard">
+            {console.log(postList)}
             {
-                console.log(postList);
-                
                 postList.map(item => {
                     if(item.pinned){
                         return(
