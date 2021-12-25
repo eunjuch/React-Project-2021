@@ -11,6 +11,7 @@ const Board = () => {
         axios.post("https://api.cecom.dev/getPostList"
         ).then(
             function resultOK(response) {
+                console.log(response.data.DATA);
                 setPostList(response.data);
             }
         ).catch(
