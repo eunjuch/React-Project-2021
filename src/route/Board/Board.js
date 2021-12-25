@@ -22,7 +22,17 @@ const Board = () => {
 
     return(
         <div id="divBoard">
-            Board Page
+            {
+                postList.DATA.map(item => {
+                    if(item.pinned){
+                        return(
+                            <div>
+                                {item.title}
+                            </div>
+                        );
+                    }
+                })
+            }
         </div>
     )
 }
