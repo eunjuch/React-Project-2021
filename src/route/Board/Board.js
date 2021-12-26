@@ -16,7 +16,8 @@ const Board = () => {
                 "content": "",
                 "title": ""
             }
-        }});
+        }
+    });
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
@@ -34,7 +35,10 @@ const Board = () => {
     return(
         <div id="divBoard">
             {
-                postList.DATA.map(postData => {
+                console.log(postList.DATA)
+            }
+            {
+                Object.entries(postList.DATA).map(postData => {
                     return(
                         <div>
                             {postData.title}
