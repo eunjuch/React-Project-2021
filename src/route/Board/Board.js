@@ -10,13 +10,13 @@ const Board = () => {
             "RESULT_CODE": 100,
             "RESULT_MSG": "NOT LOADED"
         },
-        "DATA": [{
+        "DATA": {
             "000000-000000": {
                 "author": "",
                 "content": "",
                 "title": ""
             }
-        }]
+        }
     });
 
     useEffect(() => {
@@ -38,7 +38,7 @@ const Board = () => {
                 console.log(postList.DATA)
             }
             {
-                postList.DATA.map(postData => {
+                Object.entries(postList.DATA).map(postData => {
                     return(
                         <div>
                             {postData.title}
