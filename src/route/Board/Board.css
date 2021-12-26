@@ -16,10 +16,10 @@
 }
 
 #divBoardTitleDivider{
-    height: 10px;
+    height: 3px;
     width: 100%;
 
-    background-color: #555555;
+    background-color: #999999;
 }
 
 #divBoardTitleText{
@@ -27,4 +27,9 @@
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+#divBoardTitleText p{
+    margin: 0;
 }
