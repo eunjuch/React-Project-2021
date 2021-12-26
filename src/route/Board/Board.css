@@ -4,7 +4,7 @@
 
 #divBoardContainer{
     height: 100%;
-    width: 800px;
+    width: 1200px;
 
     margin: auto;
 }
@@ -32,13 +32,13 @@
 }
 
 .pBoardPostAuthor{
-    width: 100px;
+    width: 300px;
 
     margin: 0;
 }
 
 .pBoardPostDate{
-    width: 100px;
+    width: 300px;
 
     margin: 0;
 }
