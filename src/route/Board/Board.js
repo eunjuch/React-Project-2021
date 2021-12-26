@@ -38,13 +38,11 @@ const Board = () => {
             <div id="divBoardContainer">
                 <div id="divBoardTitle">
                     <div id="divBoardTitleText">
-                        <p class="pBoardPostDate">날짜</p>
                         <p class="pBoardPostTitle">제목</p>
                         <p class="pBoardPostAuthor">작성자</p>
+                        <p class="pBoardPostDate">날짜</p>
                     </div>
-                    <div id="divBoardTitleDivider">
-
-                    </div>
+                    <div id="divBoardTitleDivider"></div>
                 </div>
                 <div id="divBoardItemContainer">
                     {
