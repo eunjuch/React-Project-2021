@@ -1,3 +1,8 @@
 #divBoard{
     width: 100%;
 }
+
+#divBoardContainer{
+    height: 100%;
+    width: 800px;
+}
