@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 
 import axios from "axios";
 
-import "./BoardItem";
+import BoardItem from "./BoardItem"; "./BoardItem";
 import "./Board.css";
 
 const Board = () => {
