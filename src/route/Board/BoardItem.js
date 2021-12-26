@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./BoardItem.css";
+
 const BoardItem = (props) => {
     return(
         <div>
