@@ -34,17 +34,17 @@
 .pBoardPostAuthor{
     width: 200px;
 
-    margin: 0;
+    margin: 5px 0 5px 0;
 }
 
 .pBoardPostDate{
     width: 200px;
 
-    margin: 0;
+    margin: 5px 0 5px 0;
 }
 
 .pBoardPostTitle{
     width: 750px;
 
-    margin: 0 0 0 50px;
+    margin: 5px 0 5px 50px;
 }
