@@ -12,10 +12,10 @@ const Board = () => {
             "RESULT_MSG": "NOT LOADED"
         },
         "DATA": {
-            "000000-000000": {
+            "": {
                 "author": "",
                 "content": "",
-                "title": ""
+                "title": "게시글 목록을 불러오는 중입니다..."
             }
         }
     });
