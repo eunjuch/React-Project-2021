@@ -29,9 +29,22 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 #divBoardTitleText p{
     margin: 0;
+}
+
+.pBoardPostAuthor{
+    width: 100px;
+}
+
+.pBoardPostDate{
+    width: 100px;
+}
+
+.pBoardPostTitle{
+    width: 550px;
+
+    margin-left: 50px;
 }
