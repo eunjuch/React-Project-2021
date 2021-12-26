@@ -34,7 +34,10 @@ const Board = () => {
 
     return(
         <div id="divBoard">
-            {
+            <div id="divBoardContainer">
+                
+            </div>
+            {/* {
                 Object.entries(postList.DATA).map(postData => {
                     return(
                         <div>
@@ -42,7 +45,7 @@ const Board = () => {
                         </div>
                     )
                 })
-            }
+            } */}
         </div>
     )
 }
