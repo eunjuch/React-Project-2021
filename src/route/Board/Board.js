@@ -42,9 +42,7 @@ const Board = () => {
                         <p class="pBoardPostTitle">제목</p>
                         <p class="pBoardPostAuthor">작성자</p>
                     </div>
-                    <div id="divBoardTitleDivider">
-
-                    </div>
+                    <div id="divBoardTitleDivider"><div/>
                 </div>
                 <div id="divBoardItemContainer">
                     {
