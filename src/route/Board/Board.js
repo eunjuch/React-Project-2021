@@ -36,16 +36,21 @@ const Board = () => {
     return(
         <div id="divBoard">
             <div id="divBoardContainer">
-                {
-                    Object.entries(postList.DATA).map(postData => {
-                        return(
-                            <BoardItem
-                                author={postData[1].author}
-                                date={postData[0]}
-                                title={postData[1].title} />
-                        )
-                    })
-                }
+                <div id="divBoardTitle">
+                    
+                </div>
+                <div id="divBoardItemContainer">
+                    {
+                        Object.entries(postList.DATA).map(postData => {
+                            return(
+                                <BoardItem
+                                    author={postData[1].author}
+                                    date={postData[0]}
+                                    title={postData[1].title} />
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )
