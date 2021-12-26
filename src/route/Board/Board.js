@@ -38,7 +38,7 @@ const Board = () => {
                 Object.entries(postList.DATA).map(postData => {
                     return(
                         <div>
-                            {postData[0].title}
+                            {postData[1].title}
                         </div>
                     )
                 })
