@@ -34,7 +34,13 @@ const Board = () => {
     return(
         <div id="divBoard">
             {
-                postList.RESULT.RESULT_CODE
+                postList.DATA.map(postData => {
+                    return(
+                        <div>
+                            {postData.title}
+                        </div>
+                    )
+                })
             }
         </div>
     )
