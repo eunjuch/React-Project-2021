@@ -1,11 +1,13 @@
 import React from "react";
 
+import "./BoardItem.css";
+
 const BoardItem = (props) => {
     return(
-        <div>
-            {props.title}
-            {props.author}
-            {props.date}
+        <div className="divBoardItem">
+            <p class="pBoardItemTitle">{props.title}</p>
+            <p class="pBoardItemAuthor">{props.author}</p>
+            <p class="pBoardItemDate">{props.date}</p>
         </div>
     );
 }

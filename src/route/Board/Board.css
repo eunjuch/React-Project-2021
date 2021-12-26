@@ -31,20 +31,20 @@
     flex-direction: row;
 }
 
-#divBoardTitleText p{
-    margin: 0;
-}
-
 .pBoardPostAuthor{
     width: 100px;
+
+    margin: 0;
 }
 
 .pBoardPostDate{
     width: 100px;
+
+    margin: 0;
 }
 
 .pBoardPostTitle{
     width: 550px;
 
-    margin-left: 50px;
+    margin: 0 0 0 50px;
 }
