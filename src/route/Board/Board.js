@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 
 import axios from "axios";
 
+import "./BoardItem";
 import "./Board.css";
 
 const Board = () => {
@@ -35,17 +36,17 @@ const Board = () => {
     return(
         <div id="divBoard">
             <div id="divBoardContainer">
-                
+                {
+                    Object.entries(postList.DATA).map(postData => {
+                        return(
+                            <BoardItem
+                                author={postData[1].author}
+                                date={postData[0]}
+                                title={postData[1].title} />
+                        )
+                    })
+                }
             </div>
-            {/* {
-                Object.entries(postList.DATA).map(postData => {
-                    return(
-                        <div>
-                            {postData[1].title}
-                        </div>
-                    )
-                })
-            } */}
         </div>
     )
 }
