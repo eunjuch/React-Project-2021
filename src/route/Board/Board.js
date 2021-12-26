@@ -36,11 +36,9 @@ const Board = () => {
         <div id="divBoard">
             {
                 Object.entries(postList.DATA).map(postData => {
-                    console.log(postData)
-
                     return(
                         <div>
-                            {postData.title}
+                            {postData[0].title}
                         </div>
                     )
                 })
