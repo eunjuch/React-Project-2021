@@ -32,19 +32,19 @@
 }
 
 .pBoardPostAuthor{
-    width: 300px;
+    width: 200px;
 
     margin: 0;
 }
 
 .pBoardPostDate{
-    width: 300px;
+    width: 200px;
 
     margin: 0;
 }
 
 .pBoardPostTitle{
-    width: 550px;
+    width: 750px;
 
     margin: 0 0 0 50px;
 }

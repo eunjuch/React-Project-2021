@@ -6,19 +6,19 @@
 }
 
 .pBoardItemAuthor{
-    width: 300px;
+    width: 200px;
 
     margin: 0;
 }
 
 .pBoardItemDate{
-    width: 300px;
+    width: 200px;
 
     margin: 0;
 }
 
 .pBoardItemTitle{
-    width: 550px;
+    width: 750px;
 
     margin: 0 0 0 50px;
 }
