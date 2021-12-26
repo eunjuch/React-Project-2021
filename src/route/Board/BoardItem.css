@@ -15,13 +15,13 @@
 .pBoardItemAuthor{
     width: 200px;
 
-    margin: 0;
+    margin: 5px 0 5px 50px;
 }
 
 .pBoardItemDate{
     width: 200px;
 
-    margin: 0;
+    margin: 5px 0 5px 50px;
 }
 
 .pBoardItemTitle{
