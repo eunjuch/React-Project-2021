@@ -10,13 +10,14 @@ const Board = () => {
             "RESULT_CODE": 100,
             "RESULT_MSG": "NOT LOADED"
         },
-        "DATA": {
+        "DATA": [{
             "000000-000000": {
                 "author": "",
                 "content": "",
                 "title": ""
             }
-        }});
+        }]
+    });
 
     useEffect(() => {
         axios.post("https://api.cecom.dev/getPostList"
