@@ -41,7 +41,9 @@ const PostView = (props) => {
                 Object.entries(postData.DATA).map((postData) => {
                     return(
                         <div>
-                            {postData}
+                            {postData.title}
+                            {postData.author}
+                            {postData.content}
                         </div>
                     )
                 })
