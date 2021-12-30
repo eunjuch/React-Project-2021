@@ -8,6 +8,8 @@ import Home from "./route/Home";
 import Board from "./route/Board";
 import Introduction from "./route/Introduction";
 import Member from "./route/Member";
+import Postview from "./route/PostView";
+import Postwrite from "./route/PostWrite";
 import Project from "./route/Project";
 
 const App = () => {
@@ -34,6 +36,16 @@ const App = () => {
                     path = "/member"
                     layout = {DefaultLayout}
                     component = {withRouter(Member)} />
+                <RouteLayout
+                    exact
+                    path = "/postview"
+                    layout = {DefaultLayout}
+                    component = {withRouter(Postview)} />
+                <RouteLayout
+                    exact
+                    path = "/postwrite"
+                    layout = {DefaultLayout}
+                    component = {withRouter(Postwrite)} />
                 <RouteLayout
                     exact
                     path = "/project"
