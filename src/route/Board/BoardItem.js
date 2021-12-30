@@ -17,8 +17,10 @@ const BoardItem = (props) => {
 
     if(dateToday == postDate.split("-")[0]){
         postDate = postDate.split("-")[1];
+        postDate = postDate.substr(0, 2) + ":" + postDate.substr(2, 2);
     }else{
         postDate = postDate.split("-")[0];
+        postDate = postDate.substr(2, 2) + "-" + postDate.substr(4, 2);
     }
 
     return(
