@@ -37,7 +37,15 @@ const PostView = (props) => {
 
     return(
         <div>
-            PostView {postData}
+            {
+                postData.DATA.map((item) => {
+                    return(
+                        <div>
+                            item.title
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
