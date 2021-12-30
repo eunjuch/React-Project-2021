@@ -39,7 +39,19 @@ const PostView = (props) => {
         <div>
             {
                 Object.entries(postData).map((item) => {
-                    console.log(item);                    
+                    let postAuthor = "";
+                    let postContent = "";
+                    let postTitle = "";
+
+                    if(item[0] == "data"){
+                        postAuthor = item[1].author;
+                        postContent = item[1].content;
+                        postTitle = item[1].title;
+                    }
+
+                    console.log(postAuthor);
+                    console.log(postContent);
+                    console.log(postTitle);
                 })
             }
         </div>
