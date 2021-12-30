@@ -41,7 +41,7 @@ const PostView = (props) => {
                 postData.DATA.map((item) => {
                     return(
                         <div>
-                            item.title
+                            {item.title}
                         </div>
                     )
                 })
