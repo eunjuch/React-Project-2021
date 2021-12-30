@@ -38,7 +38,7 @@ const PostView = (props) => {
     return(
         <div>
             {
-                Object.entries(postData.DATA).map((postData) => {
+                Object.entries(postData).map((item) => {
                     console.log(postData);
                     return(
                         <div>
