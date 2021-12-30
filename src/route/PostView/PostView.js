@@ -51,9 +51,13 @@ const PostView = (props) => {
                         return;
                     }
 
-                    console.log(postAuthor);
-                    console.log(postContent);
-                    console.log(postTitle);
+                    return(
+                        <div>
+                            {postAuthor}
+                            {postContent}
+                            {postTitle}
+                        </div>
+                    )
                 })
             }
         </div>
