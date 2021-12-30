@@ -47,11 +47,11 @@ const PostView = (props) => {
                         postAuthor = item[1].DATA.author;
                         postContent = item[1].DATA.content;
                         postTitle = item[1].DATA.title;
-                    }
 
-                    console.log(postAuthor);
-                    console.log(postContent);
-                    console.log(postTitle);
+                        console.log(postAuthor);
+                        console.log(postContent);
+                        console.log(postTitle);
+                    }
                 })
             }
         </div>
