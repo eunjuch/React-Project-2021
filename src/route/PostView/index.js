@@ -1,1 +1,1 @@
-export {default} from "./PodstView";
+export {default} from "./PostView";
