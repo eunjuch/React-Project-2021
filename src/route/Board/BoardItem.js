@@ -13,7 +13,7 @@ const BoardItem = (props) => {
     let month = today.getMonth() + 1;
     let date = today.getDate();
 
-    let dateToday = year + month + date;
+    let dateToday = "" + year + month + date;
 
     if(dateToday == postDate.split("-")[0]){
         postDate = postDate.split("-")[1];
