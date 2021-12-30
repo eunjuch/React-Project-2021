@@ -5,6 +5,7 @@ import "./BoardItem.css";
 const BoardItem = (props) => {
     let postAuthor = props.author;
     let postDate = props.date;
+    let postID = props.date;
     let postTitle = props.title;
 
     let today = new Date();   
