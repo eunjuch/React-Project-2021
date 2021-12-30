@@ -26,7 +26,7 @@ const PostView = (props) => {
             }
         ).then(
             function resultOK(response) {
-                setPostData(response.data);
+                setPostData(response);
             }
         ).catch(
             function resultError (error) {
