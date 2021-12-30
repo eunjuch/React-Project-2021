@@ -23,16 +23,30 @@ const BoardItem = (props) => {
         postDate = postDate.substr(2, 2) + "-" + postDate.substr(4, 2);
     }
 
-    return(
-        <Link to={`/postview/${postID}`}>
-            <div className="divBoardItem">
-                <p class="pBoardItemTitle">{postTitle}</p>
-                <p class="pBoardItemAuthor">{postAuthor}</p>
-                <p class="pBoardItemDate">{postDate}</p>
-            </div>
-            <div className="divBoardItemDivider"></div>
-        </Link>
-    );
+    if(postID != ""){
+        return(
+            <Link to={`/postview/${postID}`}>
+                <div className="divBoardItem">
+                    <p class="pBoardItemTitle">{postTitle}</p>
+                    <p class="pBoardItemAuthor">{postAuthor}</p>
+                    <p class="pBoardItemDate">{postDate}</p>
+                </div>
+                <div className="divBoardItemDivider"></div>
+            </Link>
+        );
+    }else{
+        return(
+            <>
+                <div className="divBoardItem">
+                    <p class="pBoardItemTitle">{postTitle}</p>
+                    <p class="pBoardItemAuthor">{postAuthor}</p>
+                    <p class="pBoardItemDate">{postDate}</p>
+                </div>
+                <div className="divBoardItemDivider"></div>
+            </>
+        )
+    }
+   
 }
 
 export default BoardItem;
