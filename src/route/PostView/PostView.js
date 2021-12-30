@@ -39,21 +39,21 @@ const PostView = (props) => {
         <div>
             {
                 Object.entries(postData).map((item) => {
-                    let postData;
+                    let postJson;
                     let resultCode;
 
                     if(item[0] == "RESULT"){
                         resultCode = item[1].RESULT_CODE;
                     }else if(item[0] == "DATA"){
-                        postData = item[1];
+                        postJson = item[1];
                     }
 
                     if(resultCode == 0){
                         return(
                             <div>
-                                {postData.title}
-                                {postData.author}
-                                {postData.content}
+                                {postJson.title}
+                                {postJson.author}
+                                {postJson.content}
                             </div>
                         )
                     }
