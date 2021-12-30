@@ -47,6 +47,8 @@ const PostView = (props) => {
                         postAuthor = item[1].DATA.author;
                         postContent = item[1].DATA.content;
                         postTitle = item[1].DATA.title;
+                    }else{
+                        return;
                     }
 
                     console.log(postAuthor);
