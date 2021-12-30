@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from "react";
 
 import axios from "axios";
+import ReactMarkdown from "react-markdown";
+import RehypeRaw from "rehype-raw";
+import RemarkGFM from "remark-gfm";
 
 import "./PostView.js"
 
@@ -36,11 +39,12 @@ const PostView = (props) => {
     }, []);
 
     return(
-        <div>
+        <>
             {
                 Object.entries(postData).map((item) => {
                     let postAuthor = "";
                     let postContent = "";
+                    let postDate = postID;
                     let postTitle = "";
 
                     if(item[0] == "data" && item[1].RESULT.RESULT_CODE == 0){
@@ -52,15 +56,32 @@ const PostView = (props) => {
                     }
 
                     return(
-                        <div>
-                            {postAuthor}
-                            {postContent}
-                            {postTitle}
+                        <div align="center" className="PostContainer">
+                            <div className="PostTitle">
+                                <h2>{postTitle}</h2>
+
+                                <div className="PostAuthorDate">
+                                    <p>written by {postAuthor}</p>
+                                    <p>|</p>
+                                    <p>{postDate}</p>
+                                </div>
+                            </div>
+
+                            <hr className="PostSeperator"/>
+
+                            <div className="PostViewContent">
+                                <div className="markdown-body">
+                                    <ReactMarkdown
+                                        children={postContent}
+                                        rehypePlugins={[RehypeRaw]}
+                                        remarkPlugins={[RemarkGFM]} />
+                                </div>
+                            </div>
                         </div>
                     )
                 })
             }
-        </div>
+        </>
     )
 }
 
