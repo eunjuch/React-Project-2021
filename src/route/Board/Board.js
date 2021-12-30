@@ -46,7 +46,7 @@ const Board = () => {
                 </div>
                 <div id="divBoardItemContainer">
                     {
-                        Object.entries(postList.DATA).map(postData => {
+                        Object.entries(postList.DATA).reverse().map(postData => {
                             return(
                                 <BoardItem
                                     author={postData[1].author}
