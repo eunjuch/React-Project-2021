@@ -43,10 +43,10 @@ const PostView = (props) => {
                     let postContent = "";
                     let postTitle = "";
 
-                    if(item[0] == "data"){
-                        postAuthor = item[1].author;
-                        postContent = item[1].content;
-                        postTitle = item[1].title;
+                    if(item[0] == "data" && item[1].RESULT.RESULT_CODE == 0){
+                        postAuthor = item[1].DATA.author;
+                        postContent = item[1].DATA.content;
+                        postTitle = item[1].DATA.title;
                     }
 
                     console.log(postAuthor);
