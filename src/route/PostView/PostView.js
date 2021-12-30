@@ -49,13 +49,13 @@ const PostView = (props) => {
                     }
 
                     if(resultCode == 0){
+                        console.log(postJson);
+
                         return(
                             <div>
-                                {postJson.title}
-                                {postJson.author}
-                                {postJson.content}
+                                {postJson}
                             </div>
-                        )
+                        );
                     }
 
                     
