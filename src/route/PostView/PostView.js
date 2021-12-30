@@ -38,13 +38,13 @@ const PostView = (props) => {
     return(
         <div>
             {
-                Object.entries(postData.DATA).map((postData) => {
-                    console.log(postData);
+                Object.entries(postData).map((item) => {
+                    console.log(item);
                     return(
                         <div>
-                            {postData.title}
-                            {postData.author}
-                            {postData.content}
+                            {item.title}
+                            {item.author}
+                            {item.content}
                         </div>
                     )
                 })
